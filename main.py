@@ -42,8 +42,7 @@ UTF8 = "utf-8"
 SIGN = "sign"
 KW = "kw"
 
-token=str(sys.argv[1])
-chat_id=str(sys.argv[2])
+
 bot=telepot.Bot(token)
 fin=None
 
