@@ -42,10 +42,6 @@ UTF8 = "utf-8"
 SIGN = "sign"
 KW = "kw"
 
-
-bot=telepot.Bot(token)
-fin=None
-
 s = requests.Session()
 
 def send(message):
