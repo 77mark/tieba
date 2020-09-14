@@ -42,8 +42,15 @@ UTF8 = "utf-8"
 SIGN = "sign"
 KW = "kw"
 
+token=str(sys.argv[1])
+chat_id=str(sys.argv[2])
+bot=telepot.Bot(token)
+fin=None
+
 s = requests.Session()
 
+def send(message):
+    bot.sendMessage(chat_id,message, parse_mode=None, disable_web_page_preview=None, disable_notification=None, reply_to_message_id=None, reply_markup=None)
 
 def get_tbs(bduss):
     logger.info("获取tbs开始")
@@ -181,3 +188,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+msg='[贴吧]已成功签到'
+send(msg)
