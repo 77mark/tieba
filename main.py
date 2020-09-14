@@ -7,12 +7,6 @@ import copy
 import logging
 import json,sys,time
 import telepot
-   
-token=str(sys.argv[1])
-chat_id=str(sys.argv[2])
-bot=telepot.Bot(token)
-
- 
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -49,6 +43,10 @@ SIGN_KEY = 'tiebaclient!!!'
 UTF8 = "utf-8"
 SIGN = "sign"
 KW = "kw"
+
+token=str(sys.argv[1])
+chat_id=str(sys.argv[2])
+bot=telepot.Bot(token)
 
 s = requests.Session()
 
