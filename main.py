@@ -7,6 +7,7 @@ import copy
 import logging
 import sys
 import telepot
+
 token=str(sys.argv[2])
 chat_id=str(sys.argv[3])
 bot=telepot.Bot(token)
@@ -190,5 +191,5 @@ def main():
 if __name__ == '__main__':
     main()
     
-    message='[贴吧d]qiandao'
-    send(message)
+message='[贴吧d]qiandao'
+send(message)
