@@ -5,6 +5,14 @@ import hashlib
 import time
 import copy
 import logging
+import json,sys,time
+import telepot
+   
+token=str(sys.argv[1])
+chat_id=str(sys.argv[2])
+bot=telepot.Bot(token)
+
+ 
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -44,6 +52,9 @@ KW = "kw"
 
 s = requests.Session()
 
+def send(message):
+    bot.sendMessage(chat_id,message, parse_mode=None, disable_web_page_preview=None, disable_notification=None, reply_to_message_id=None, reply_markup=None)
+    
 def get_tbs(bduss):
     logger.info("获取tbs开始")
     headers = copy.copy(HEADERS)
