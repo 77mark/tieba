@@ -44,9 +44,6 @@ KW = "kw"
 
 s = requests.Session()
 
-def send(message):
-    bot.sendMessage(chat_id,message, parse_mode=None, disable_web_page_preview=None, disable_notification=None, reply_to_message_id=None, reply_markup=None)
-
 def get_tbs(bduss):
     logger.info("获取tbs开始")
     headers = copy.copy(HEADERS)
@@ -180,8 +177,8 @@ def main():
         logger.info("完成第" + str(n) + "个用户签到")
     logger.info("所有用户签到结束")
 
-
 if __name__ == '__main__':
     main()
+    
 msg='[贴吧]已成功签到'
 send(msg)
