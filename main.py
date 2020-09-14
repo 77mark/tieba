@@ -5,6 +5,11 @@ import hashlib
 import time
 import copy
 import logging
+import telepot
+
+token=str(sys.argv[2])
+chat_id=str(sys.argv[3])
+bot=telepot.Bot(token)
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -59,6 +64,8 @@ def get_tbs(bduss):
     logger.info("获取tbs结束")
     return tbs
 
+def send(message):
+    bot.sendMessage(chat_id,message, parse_mode=None, disable_web_page_preview=None, disable_notification=None, reply_to_message_id=None, reply_markup=None)
 
 def get_favorite(bduss):
     logger.info("获取关注的贴吧开始")
@@ -181,4 +188,5 @@ def main():
 
 if __name__ == '__main__':
     main()
-    
+    message='[WakeLeancloud]唤醒状态：{}'.format(req.status_code)
+    send(message)
