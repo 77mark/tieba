@@ -10,8 +10,6 @@ import telepot
 token=str(sys.argv[2])
 chat_id=str(sys.argv[3])
 bot=telepot.Bot(token)
- 
-   
 
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
