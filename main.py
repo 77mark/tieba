@@ -5,8 +5,10 @@ import hashlib
 import time
 import copy
 import logging
-import json,sys,time
-import telepot
+import telegram  
+import sys  
+   
+
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -44,9 +46,6 @@ UTF8 = "utf-8"
 SIGN = "sign"
 KW = "kw"
 
-token=str(sys.argv[1])
-chat_id=str(sys.argv[2])
-bot=telepot.Bot(token)
 
 s = requests.Session()
 
