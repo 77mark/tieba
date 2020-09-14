@@ -5,8 +5,12 @@ import hashlib
 import time
 import copy
 import logging
-import telegram  
-import sys  
+import sys
+import telepot
+token=str(sys.argv[2])
+chat_id=str(sys.argv[3])
+bot=telepot.Bot(token)
+ 
    
 
 
@@ -188,5 +192,5 @@ def main():
 if __name__ == '__main__':
     main()
     
-msg='[贴吧]已成功签到'
-send(msg)
+    message='[贴吧d]qiandao'
+    send(message)
