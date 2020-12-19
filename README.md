@@ -1,7 +1,7 @@
 # 贴吧签到Github Action版
 
-## 本项目经过@Ysnsn修改，加入了Telegram Bot推送功能，请在secret加入TELEBOT_TOKEN填写你的bot token和CHAT_ID填写你的用户ID（可以发消息到@userinfobot获取）
-## 今日签到状态
+## ~~~本项目经过@Ysnsn修改，加入了Telegram Bot推送功能，请在secret加入TELEBOT_TOKEN填写你的bot token和CHAT_ID填写你的用户ID（可以发消息到@userinfobot获取）
+## 今日签到状态~~
 
 ![Baidu Tieba Auto Sign](https://github.com/ghosx/tieba/workflows/Baidu%20Tieba%20Auto%20Sign/badge.svg)
 
